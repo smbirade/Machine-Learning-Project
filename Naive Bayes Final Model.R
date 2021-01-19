@@ -3,11 +3,13 @@
 ########Creating Train and Validation Datasets#########
 #######################################################
 #######################################################
+train=read.csv("training.csv")
+valid=read.csv("validation.csv")
 test2=train
 b_valid2=valid
 test2=test2[-c(7,45,128,130)]
 b_valid2=b_valid2[-c(7,45,128,130)]
-min(test2)
+
 #######################################################
 #######################################################
 ###########Trying Different Standardization############
